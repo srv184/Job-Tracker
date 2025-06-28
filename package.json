@@ -12,16 +12,6 @@
     "client": "npm start --prefix client",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SharinLana/mern-stack-job-tracker.git"
-  },
-  "author": "Svetlana Sharina (aka Lana Sharin)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SharinLana/mern-stack-job-tracker/issues"
-  },
-  "homepage": "https://github.com/SharinLana/mern-stack-job-tracker#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",

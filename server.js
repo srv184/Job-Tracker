@@ -60,7 +60,7 @@ app.use(notFound);
 const start = async () => {
   try {
     await mongoose
-      .connect(process.env.MONGODB_URL)
+      .connect(process.env.MONGO_URL)
       .then(() => console.log("MONGODB connected!"))
       .catch((err) => console.log(err));
 

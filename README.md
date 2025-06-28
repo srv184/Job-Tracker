@@ -1,39 +1,110 @@
-## Job Tracker
+# Job Tracker App
 
-> This web app allows you to keep track of your job applications by creating them and storing in a database. You can also edit or delete existing applications, and view statistics on them: number of declined, pending, scheduled for interview jobs and number of applications created each month.
-> To start using the application, you need to create a personal profile/account.
+A full-stack Job Tracking application built with the **MERN Stack** that helps users manage and monitor their job application journey. Users can add, update, delete, and analyze their job entries with insightful statistics — all securely and with a smooth user experience.
 
-### The goals of creating this application:
+---
 
-The main goals for me as a web developer were to improve my skills in working with:
+## Live Demo
 
-- MERN stack (Mongoose/MongoDB, Express, React, Node);
-- React Router;
-- Axios;
-- Postman;
-- JsonWebToken;
-- BcryptJS;
-- security packages;
-- styled components;
-- cookies (cookie-parser)
+**[View Live Application]()**
 
-### To view the app in the browser, copy and paste the following line to your browser URL address bar:
+> _Deployed on Render's free tier — the app may take 60–90 seconds to load when idle._
 
-> NOTE: The app is deployed on a free tier of Render.com, so most of the time it's in a sleep mode. It may take up to 60-90 seconds for Render.com to wake it up. Thank you for your patience!
+---
 
-```
-https://mern-job-tracker-mt0w.onrender.com/
-```
+## Features
 
-### Functionalities:
+- **Secure Authentication** (Register / Login / Logout)
+- **Protected Routes** (for authenticated users only)
+- **Add / Edit / Delete Job Applications**
+- **Job Attributes:** title, company, type, status, salary, recruiter details, interview date/time
+- **Search + Filtering:** by job type, status, title, and sort options
+- **Statistics Dashboard:**
+  - Monthly application count
+  - Status breakdown (declined, pending, interview)
+- **Pagination Support**
+- **User Profile Management**
+- **Responsive UI** (Mobile-friendly)
 
-- protected routes for unauthorized users;
-- registering (creating account) / login / logout options;
-- editing profile data;
-- adding / editing job information (including job title, company name, job type, status, salary range, recruiter's name and email, interview date and time, etc);
-- rendering all the job cards created by the user;
-- pagination;
-- search bar (allows the user to filter the existing jobs by type, status, job title and also sort them alphabetically or by creation time);
-- displaying statistics as a chart for a certain period of time (number of declined, pending, scheduled for interview jobs; number of applications created each month);
-- deleting jobs from the database;
-- responsive design (mobile adaptation)
+---
+
+## Project Objectives
+
+This project was built with the intention to:
+
+- Strengthen practical understanding of full-stack development
+- Master the MERN stack (MongoDB, Express.js, React, Node.js)
+- Implement secure user authentication using JWT & cookies
+- Practice best practices in RESTful API development
+- Work with real-world features like charts, pagination, and profile management
+- Deploy and manage a live MERN application using Render
+
+---
+
+## Tech Stack
+
+### **Frontend**
+
+- React.js (Hooks + Context API)
+- React Router DOM
+- Styled Components
+- Axios (API communication)
+
+### **Backend**
+
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT (Authentication)
+- bcrypt.js (Password hashing)
+- dotenv (Environment config)
+
+### **Security Middleware**
+
+- helmet
+- xss-clean
+- express-mongo-sanitize
+- cookie-parser
+
+---
+
+## 📂 Folder Structure
+
+mern-job-tracker/
+│
+├── client/ # React frontend
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── App.js
+│
+├── controllers/ # Express route logic
+├── middleware/ # Custom middleware
+├── models/ # Mongoose models
+├── routes/ # Express routes
+├── utils/ # Helper functions
+├── server.js # App entry point
+└── .env # Environment variables
+
+---
+
+## Future Enhancements
+
+- Email notifications for scheduled interviews
+- Resume upload support
+- Dark/light theme switcher
+- Admin dashboard panel
+- Integration with job portals (Indeed, LinkedIn)
+
+---
+
+## Author
+
+Sourav Kumar Bhagat
+Entry-Level Full Stack Developer | MERN Stack Enthusiast
+🔗 LinkedIn | 💻 GitHub
+
+---
+
+Thank you for checking out the project! ⭐
+Feel free to open issues or contribute ideas for improvements.

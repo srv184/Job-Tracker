@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     margin-top: 100px;
   }
